@@ -56,10 +56,6 @@ public class Eval {
             else if(car instanceof String && car.equals("lambda")) {
                 return Define.DefineLambda(cdr);
             }
-//            else if(car_value instanceof Number || car_value instanceof Bool || car_value instanceof Nil) {
-//                if(!(cdr instanceof Nil)) return E(cdr);
-//                else return car_value;
-//            }
             else if(car_value != null){
                 if(!(cdr instanceof Nil)) return E(cdr);
                 else return car_value;
